@@ -15,6 +15,7 @@
 		01D99D482048DBE5001D00E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D99D472048DBE5001D00E5 /* main.m */; };
 		01D99D522048DBE6001D00E5 /* TestForDeviceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D99D512048DBE6001D00E5 /* TestForDeviceTests.m */; };
 		01D99D5D2048DBE6001D00E5 /* TestForDeviceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D99D5C2048DBE6001D00E5 /* TestForDeviceUITests.m */; };
+		01D99D6D2049045C001D00E5 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01D99D6C20490451001D00E5 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		01D99D582048DBE6001D00E5 /* TestForDeviceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestForDeviceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01D99D5C2048DBE6001D00E5 /* TestForDeviceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestForDeviceUITests.m; sourceTree = "<group>"; };
 		01D99D5E2048DBE6001D00E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01D99D6C20490451001D00E5 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01D99D6D2049045C001D00E5 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 				01D99D502048DBE6001D00E5 /* TestForDeviceTests */,
 				01D99D5B2048DBE6001D00E5 /* TestForDeviceUITests */,
 				01D99D362048DBE5001D00E5 /* Products */,
+				01D99D6B20490451001D00E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +134,14 @@
 				01D99D5E2048DBE6001D00E5 /* Info.plist */,
 			);
 			path = TestForDeviceUITests;
+			sourceTree = "<group>";
+		};
+		01D99D6B20490451001D00E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01D99D6C20490451001D00E5 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,7 +443,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestForDevice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TestForDevice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,7 +458,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = TestForDevice/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TestForDevice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
